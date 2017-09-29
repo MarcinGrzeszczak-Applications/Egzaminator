@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/answer_button"
+    android:padding="@dimen/answer_padding"
+    android:layout_marginTop="@dimen/answer_margin_top">
+
+    <TextView
+        android:id="@+id/AnswerAdapter.text.answerLetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A."
+        android:textSize="@dimen/answer_text_letter"
+        android:textColor="@color/black"/>
+
+    <com.marti.dev.egzaminator.CustomViews.FontTextView
+        android:id="@+id/AnswerAdapter.text.answerContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Odpowiedź na pytanie"
+        app:text_font="fonts/trebuchet/trebuchet.ttf"
+        android:textSize="@dimen/answer_text_content"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
