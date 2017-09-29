@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.marti.dev.egzaminator.UI.Start"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/layout_padding">
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline6"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <ImageView
+        android:id="@+id/Start.logo.hat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="30:9"
+        app:srcCompat="@drawable/hat"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <com.marti.dev.egzaminator.CustomViews.FontTextView
+        android:id="@+id/Start.title.text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/app_name"
+        app:text_font="fonts/chalkduster.ttf"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/app_title_size"
+        app:layout_constraintBottom_toTopOf="@+id/Start.logo.hat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.marti.dev.egzaminator.CustomViews.FontButton
+        android:id="@+id/Start.button.start"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/big_button_size"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/start_button_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/big_text_size"
+        app:backgroundTint="@color/colorAccent"
+        app:button_font="fonts/chalkduster.ttf"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/Start.title.text"
+        app:layout_constraintRight_toRightOf="@+id/Start.title.text"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline7"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54" />
+
+    <com.marti.dev.egzaminator.CustomViews.FontButton
+        android:id="@+id/Start.button.load"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/big_button_size"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/load_button_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/big_text_size"
+        app:backgroundTint="@color/colorAccent"
+        app:button_font="fonts/chalkduster.ttf"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/Start.title.text"
+        app:layout_constraintRight_toRightOf="@+id/Start.title.text"
+        app:layout_constraintTop_toBottomOf="@+id/Start.button.start" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline8"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="vertical" />
+
+</android.support.constraint.ConstraintLayout>
