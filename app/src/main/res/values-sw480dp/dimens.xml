@@ -4,9 +4,9 @@
     <dimen name="layout_padding">20dp</dimen>
 
     <dimen name="hat_picture_size">160dp</dimen>
-    <dimen name="big_button_size">40dp</dimen>
+    <dimen name="big_button_size">120dp</dimen>
 
-    <dimen name="big_text_size">15sp</dimen>
-    <dimen name="app_title_size">80sp</dimen>
+    <dimen name="big_text_size">50sp</dimen>
+    <dimen name="app_title_size">70sp</dimen>
 
 </resources>
