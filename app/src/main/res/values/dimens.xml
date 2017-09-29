@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="layout_padding">20dp</dimen>
+
+    <dimen name="hat_picture_size">160dp</dimen>
+    <dimen name="big_button_size">60dp</dimen>
+
+    <dimen name="big_text_size">20sp</dimen>
+    <dimen name="app_title_size">30sp</dimen>
+
+    <dimen name="app_title_mini_size">24sp</dimen>
+    <dimen name="score_text_size">50sp</dimen>
+    <dimen name="score_number_text_size">40sp</dimen>
+
+</resources>
