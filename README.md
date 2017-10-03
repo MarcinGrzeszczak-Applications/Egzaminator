@@ -1,6 +1,6 @@
 # Egzaminator
 
-Application in beta version
+ Beta version
 
 
 # 1. Overview
