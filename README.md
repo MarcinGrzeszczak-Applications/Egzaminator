@@ -18,9 +18,18 @@ Application in beta version
   By clicking on Start Button you start playing quiz.
   
   
-  ![](https://raw.githubusercontent.com/MarcinGrzeszczak-Applications/Egzaminator/master/screenshots/StartActivity.gif)
+  ![](https://raw.githubusercontent.com/MarcinGrzeszczak-Applications/Egzaminator/master/screenshots/start_Activity.png)
   
+
+   ### 2.1.1 Loading quiz
+    
+  
+  ![](https://raw.githubusercontent.com/MarcinGrzeszczak-Applications/Egzaminator/master/screenshots/load_Test.gif)
 
   
   
+  ## 2.2 Question Activity
   
+  This activity is a little bit flexible. You can setup quantity of answers (Preferred 3 or 4).
+  
+  If 
