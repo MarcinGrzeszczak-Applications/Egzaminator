@@ -9,4 +9,13 @@
     <string name="score_text">WYNIK</string>
 
     <string name="hat_content_description">Hat picture</string>
+
+
+    <string name="window_title_attention">Uwaga</string>
+
+    <string name="window_content_not_choosed_file">Nie wybrano pliku testów.</string>
+    <string name="window_content_read_permission_not_granted">Nie zezwolono na odczyt plików.</string>
+
+    <string name="overlay_good">dobrze</string>
+    <string name="overlay_bad">źle</string>
 </resources>

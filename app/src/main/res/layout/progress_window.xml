@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_margin="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/ProgressWindow.text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proszę czekać."
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19dp"
+        />
+
+    <ProgressBar
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/rotating_progress_circle"
+        />
+</LinearLayout>

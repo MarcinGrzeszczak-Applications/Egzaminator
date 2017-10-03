@@ -13,18 +13,13 @@
 
     <TextView
         android:id="@+id/AnswerAdapter.text.answerLetter"
-        android:layout_width="15dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A."
         android:textSize="@dimen/answer_text_letter"
         android:textColor="@color/black"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.6"
-        android:layout_marginLeft="0dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
 
     <com.marti.dev.egzaminator.CustomViews.FontTextView
         android:id="@+id/AnswerAdapter.text.answerContent"

@@ -5,7 +5,7 @@
     android:id="@+id/AnsweAdapter"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="40dp"
+    android:layout_height="60dp"
     android:background="@drawable/answer_button"
     android:paddingLeft="16dp"
 
@@ -13,17 +13,13 @@
 
     <TextView
         android:id="@+id/AnswerAdapter.text.answerLetter"
-        android:layout_width="15dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A."
         android:textSize="@dimen/answer_text_letter"
         android:textColor="@color/black"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.6"
-        android:layout_marginLeft="0dp"
+        tools:layout_editor_absoluteY="3dp"
+        android:layout_marginLeft="4dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <com.marti.dev.egzaminator.CustomViews.FontTextView
@@ -32,7 +28,7 @@
         android:layout_height="0dp"
         android:text="Odpowiedź na pytanie"
         app:text_font="fonts/trebuchet/trebuchet.ttf"
-        android:textSize="10sp"
+        android:textSize="13sp"
         android:gravity="center"
         android:textColor="@color/black"
         app:layout_constraintTop_toTopOf="parent"
