@@ -14,7 +14,7 @@ Application in beta version
   ## 2.1 Start activity
   
   By clicking on Load Button you can select quiz you want to load.
-  Application remeber selected quiz even when you close it.
+  Application save path to selected quiz even when you close it.
   By clicking on Start Button you start playing quiz.
   
   
