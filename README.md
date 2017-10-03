@@ -18,7 +18,7 @@ Application in beta version
   By clicking on Start Button you start playing quiz.
   
   
-  ![](https://raw.githubusercontent.com/MarcinGrzeszczak-Applications/Egzaminator/master/screenshots/StartActivity.gif)
+  ![](https://raw.githubusercontent.com/MarcinGrzeszczak-Applications/Egzaminator/master/screenshots/Start_Activity.gif)
   
 
   
