@@ -15,7 +15,7 @@ Application in beta version
   
   By clicking on Load Button you can select quiz you want to load.
   Application save path to selected quiz even when you close it.
-  By clicking on Start Button you start playing quiz.
+  By clicking on Start Button you start quiz.
   
   
   ![](https://raw.githubusercontent.com/MarcinGrzeszczak-Applications/Egzaminator/master/screenshots/start_Activity.png)
