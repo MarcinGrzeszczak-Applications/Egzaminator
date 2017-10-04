@@ -53,7 +53,7 @@
 
 # 3. Icon
 
-![](https://raw.githubusercontent.com/MarcinGrzeszczak-Applications/Egzaminator/master/screenshots/icon design.png)
+![](https://raw.githubusercontent.com/MarcinGrzeszczak-Applications/Egzaminator/master/screenshots/icon_design.png)
    
 
 # 4. External Libraries
