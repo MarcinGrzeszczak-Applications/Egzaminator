@@ -1,6 +1,6 @@
 # Egzaminator
 
-Application in beta version
+ Beta version
 
 
 # 1. Overview
@@ -14,8 +14,8 @@ Application in beta version
   ## 2.1 Start activity
   
   By clicking on Load Button you can select quiz you want to load.
-  Application remeber selected quiz even when you close it.
-  By clicking on Start Button you start playing quiz.
+  Application save path to selected quiz even when you close it.
+  By clicking on Start Button you start quiz.
   
   
   ![](https://raw.githubusercontent.com/MarcinGrzeszczak-Applications/Egzaminator/master/screenshots/start_Activity.png)
@@ -31,5 +31,27 @@ Application in beta version
   ## 2.2 Question Activity
   
   This activity is a little bit flexible. You can setup quantity of answers (Preferred 3 or 4).
+  If image is attached to question, then it showing on screen.
   
-  If 
+  ![](https://raw.githubusercontent.com/MarcinGrzeszczak-Applications/Egzaminator/master/screenshots/question_Activity.png)
+  
+  
+   ### 2.2.1 Correct answer
+   
+   ![](https://raw.githubusercontent.com/MarcinGrzeszczak-Applications/Egzaminator/master/screenshots/correct_Answer.gif)
+   
+   
+   ### 2.2.2 Wrong answer
+   
+   ![](https://raw.githubusercontent.com/MarcinGrzeszczak-Applications/Egzaminator/master/screenshots/wrong_Answer.gif)
+
+
+   ## 2.3 Score Activity
+   
+   ![](https://raw.githubusercontent.com/MarcinGrzeszczak-Applications/Egzaminator/master/screenshots/score_Activity.gif)
+
+# 3. External Libraries
+External libraries used int this project :
+* ButterKnife
+* Glide
+* Moshi
