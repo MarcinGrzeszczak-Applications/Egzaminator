@@ -50,3 +50,8 @@
    
    ![](https://raw.githubusercontent.com/MarcinGrzeszczak-Applications/Egzaminator/master/screenshots/score_Activity.gif)
 
+# 3. External Libraries
+External libraries used int this project :
+* ButterKnife
+* Glide
+* Moshi
