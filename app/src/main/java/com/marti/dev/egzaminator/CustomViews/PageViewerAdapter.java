@@ -39,7 +39,7 @@ public class PageViewerAdapter extends FragmentStatePagerAdapter implements Ques
         QuestionFragment questionFragment = new QuestionFragment();
         questionFragment.setQuestionListener(this);
         questionFragment.setQuestionId(mTestModel.questions.get(position).id);
-        questionFragment.setImagePath(mImagePath+mTestModel.questions.get(position).imagePath);
+        questionFragment.setImagePath(mImagePath+"/"+mTestModel.questions.get(position).imagePath);
         questionFragment.setQuestion(mTestModel.questions.get(position).questionText);
         questionFragment.setAnswers(mTestModel.questions.get(position).correctAnswer,mTestModel.questions.get(position).answers);
         return questionFragment;

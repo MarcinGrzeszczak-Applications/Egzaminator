@@ -4,7 +4,6 @@ package com.marti.dev.egzaminator.core;
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.net.Uri;
-import android.os.Looper;
 import android.support.v4.content.AsyncTaskLoader;
 
 import java.io.BufferedReader;

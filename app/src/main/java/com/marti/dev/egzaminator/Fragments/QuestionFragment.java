@@ -80,20 +80,13 @@ public class QuestionFragment extends Fragment implements AnswerListAdapter.List
             view.post(new Runnable() {
                 @Override
                 public void run() {
-                    File file = Environment.getExternalStoragePublicDirectory(mImagePath);
-                   // file = file.listFiles()[3];
-                  //  file = file.listFiles()[2].listFiles()[0];
-                    Glide.with(QuestionFragment.this)
-                                .load(file)
+                               Glide.with(QuestionFragment.this)
+                                .load(new File(mImagePath))
                                 .apply(new RequestOptions().dontAnimate().diskCacheStrategy(DiskCacheStrategy.NONE)
                                         .skipMemoryCache(true)
                                         .override(imageSize, imageSize))
                                 .into(mImage);
 
-
-                //    } catch (FileNotFoundException e) {
-                 //       e.printStackTrace();
-                //    }
                 }
 
             });

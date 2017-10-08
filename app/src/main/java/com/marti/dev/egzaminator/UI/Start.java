@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Environment;
+import android.provider.DocumentsContract;
 import android.support.annotation.NonNull;
 import android.support.v4.app.LoaderManager;
 import android.support.v7.app.AppCompatActivity;
@@ -32,7 +34,7 @@ public class Start extends AppCompatActivity implements LoaderManager.LoaderCall
     private TestModel mCurrentTest;
     private boolean mReadStoragePermissionGranted;
     private Uri mFileUri;
-    private String mImagePath;
+    private String mDirPath;
     private LoaderManager mLoaderManager;
     private boolean mWaitForLoad;
 
@@ -88,8 +90,8 @@ public class Start extends AppCompatActivity implements LoaderManager.LoaderCall
                     Intent startQuestionsActivity = new Intent(Start.this, Questions.class);
                     startQuestionsActivity.putExtra(TestModel.NAME, mCurrentTest);
 
-                    if(mImagePath != null)
-                        startQuestionsActivity.putExtra("ImagePath",mImagePath);
+                    if(mDirPath != null)
+                        startQuestionsActivity.putExtra(Questions.DIR_PATH_NAME,mDirPath);
                     startActivity(startQuestionsActivity);
 
                 } else
@@ -113,12 +115,11 @@ public class Start extends AppCompatActivity implements LoaderManager.LoaderCall
 
     }
 
-    private String imagePath(){
-        String path = mFileUri.getPath();
-        path = path.substring(0,path.lastIndexOf("/")+1);
-        path = path.substring(path.indexOf("0/")+2,path.length());
-        path = path.substring(path.indexOf(":")+1,path.length());
-        return path;
+    private String rootPath(){
+        String docUri = DocumentsContract.getDocumentId(mFileUri);
+        docUri =  docUri.split(":")[1];
+        docUri = docUri.substring(0,docUri.lastIndexOf("/"));
+        return docUri;
     }
 
     private void checkPermissions() {
@@ -132,7 +133,7 @@ public class Start extends AppCompatActivity implements LoaderManager.LoaderCall
 
     private void initLoader(Uri fileUri) {
         mFileUri = fileUri;
-        mImagePath = imagePath();
+        mDirPath = rootPath();
         if (mFileUri != null && mReadStoragePermissionGranted) {
             if (!mLoaderManager.hasRunningLoaders())
                 mLoaderManager.initLoader(LOADER_MANAGER, null, this);

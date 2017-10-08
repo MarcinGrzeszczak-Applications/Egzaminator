@@ -16,8 +16,10 @@ import butterknife.ButterKnife;
 
 public class Questions extends AppCompatActivity implements QuestionFragment.Listener {
 
+    public static final String DIR_PATH_NAME = "DirPath";
+
     private TestModel mTestModel;
-    private String mImagePath;
+    private String mDirPath;
     private int[] results;
 
 
@@ -42,7 +44,7 @@ public class Questions extends AppCompatActivity implements QuestionFragment.Lis
         }
 
         mTestModel = getIntent().getParcelableExtra(TestModel.NAME);
-        mImagePath = getIntent().getStringExtra("ImagePath");
+        mDirPath = getIntent().getStringExtra(DIR_PATH_NAME);
 
         results = new int[mTestModel.questions.size()];
 
@@ -53,7 +55,7 @@ public class Questions extends AppCompatActivity implements QuestionFragment.Lis
 
         pagerViewerAdapter.setQuestionListener(this);
         pagerViewerAdapter.setTestModel(mTestModel);
-        pagerViewerAdapter.setImagePath(mImagePath);
+        pagerViewerAdapter.setImagePath(mDirPath);
 
         mPagerFragmentContainer.setAdapter(pagerViewerAdapter);
 
